@@ -1,0 +1,31 @@
+package Moi;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class asdzxc
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] asd = new int[25];
+        int counter = 0;
+        int sum = 0;
+        for (int i=0;i<asd.length;i++){
+            asd[i] = Integer.parseInt(reader.readLine());
+        }
+        for ( int x: asd){
+
+            if (x<0){
+                sum += x;
+            }
+            if (x>0){
+                counter++;
+            }
+        }
+        System.out.println("Sum is "+sum);
+        System.out.println("Counter is"+counter);
+    }
+}
